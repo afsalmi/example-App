@@ -1,0 +1,231 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div>
+      <section class="card" order-id="card-1">
+        <div class="card-header cursor_default">
+          <span class="cat__core__title">
+            <div class="row">
+              <div class="col-lg-5">
+                <!-- <strong style="font-size: 16px;" *ngIf="currentPageName">{{currentPageName}}</strong> -->
+              </div>
+              <div class="col-lg-4">
+                <div class="container-dashboard">
+                  <img alt="" id="dashboard-img" class="responsive" src="../../../assets/images/icons1.png" />
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <!-- <button type="button"  style="min-width:200px;border-radius: 30px;" class="btn btn-primary pointer pull-right" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" ><span>Refer a Friend  <em style="margin-top: 4px;" class="fa fa-user-o fa-sm pointer pull-right" aria-hidden="true"></em></span>
+                </button> -->
+
+                <div class="container-refer">
+                  <img alt="" id="refer-img" class="responsive pointer" src="../../../assets/images/icons1.png" />
+                </div>
+              </div>
+            </div>
+          </span> 
+        </div>
+        <div style="min-height: 600px" class="row" >
+          <div class="card-block" >
+              <div class="row">
+                <div class="col-lg-9">
+                  <div class="col-lg-12 row">
+                    <div class="col-lg-8">
+                      <div class="cat__core" id="left-col">
+                          <section class="card" order-id="card-1">
+                              <div class="card-block">
+                                  <div class="row">
+                                      <div class="col-lg-12">
+                                          <div>
+                                              <canvas baseChart width="400" height="200"
+                                              [datasets]="lineChartData"
+                                              [labels]="lineChartLabels"
+                                              [options]="lineChartOptions"
+                                              [colors]="lineChartColors"
+                                              [legend]="lineChartLegend"
+                                              [chartType]="lineChartType"
+                                              [plugins]="lineChartPlugins">
+                                              </canvas>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="right-col">
+                            <section class="card" order-id="card-2">
+                                <div class="card-block">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div style="display: block;">
+                                                <canvas baseChart 
+                                                  [data]="doughnutChartData"
+                                                  [labels]="doughnutChartLabels"
+                                                  [chartType]="doughnutChartType">
+                                                </canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-12 text-center ">
+                                            <label class="sizeLarge" for="l1" style="font-weight: bold;">CCRB Mining</label>
+                                            <br>
+                                            <label class="sizeLarge" for="l1" style="font-weight: bold;">Overall Completion</label>
+                                      </div>
+                                    </div>
+
+                                    <div class="row">
+                                      <div class="col-lg-6">
+                                        <div class="text-center ">
+                                          <label class="small" for="l1" style="font-weight: 200;">Hash Mined</label>
+                                            <br>
+                                            <label class="sizeLarge" for="l1" style="font-weight: bold;">985 K</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="text-center ">
+                                          <label class="small" for="l1" style="font-weight: 200;">CCRB Mined</label>
+                                            <br>
+                                            <label class="sizeLarge" for="l1" style="font-weight: bold;">$ 2.46</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="cat__core__margin-fix"><!-- --></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="container-img">
+                          <img alt="" id="clip" class="responsive" src="../../../assets/images/icons1.png" />
+                        </div>
+                        <br>
+                      <form>
+                        <div class="form-group row">
+                            <label class="col-md-6 col-form-label" for="l1">Membership:</label>
+                            <label class="col-md-6 col-form-label" for="l1"><a href="javascript:void(0)" class="sizeLarge bold"> Prime Plus</a></label>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-6 col-form-label" for="l1">Trading Account:</label>
+                            <label class="col-md-6 col-form-label bold" for="l1">266.7 CCRB</label>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-6 col-form-label" for="l1">Mining Balance:</label>
+                            <label class="col-md-6 col-form-label bold" for="l1">266.7 CCRB</label>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-6 col-form-label" for="l1">Mining Pending:</label>
+                            <label class="col-md-6 col-form-label bold" for="l1">266.7 CCRB</label>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-6 col-form-label" for="l1">Total:</label>
+                            <label class="col-md-6 col-form-label bold" for="l1">266.7 CCRB</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="button"  style="min-width:200px;border-radius: 30px;" class="btn btn-primary pointer text-center" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" ><span>Upgrade</span>
+                            </button>
+                        </div>
+                        
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <section class="card" order-id="card-2">
+                <div class="card-block" >
+                  <div class="row">
+                        
+                    <div class="col-lg-11 row">
+                      <div class="col-md-3 row-eq-height">
+                        <div class="card" style="width:100% !important;line-height: 1.5 !important;padding-left: 0rem !important; padding-right: 0rem !important;">
+                          <div class="card-block" style="padding: 0.5rem !important;">
+                            <div class="text-center">
+                                <span class="pull-left"><em style="padding-top: 11px !important;" class="fa fa-btc fa-lg pointer" aria-hidden="true"></em></span>
+                                <span data-id="c1" class="sizeLarge" style="font-weight: bold !important;"> Crypto Carbon(A)</span>
+                                <br>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <span style="font-size: small !important;font-weight: bold !important;" data-toggle="tooltip" data-placement="top" data-animation="false">266.7CCRB</span>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 row-eq-height">
+                        <div class="card" style="width:100% !important;line-height: 1.5 !important;padding-left: 0rem !important; padding-right: 0rem !important;">
+                          <div class="card-block" style="padding: 0.5rem !important;">
+                              <div class="text-center">
+                                <span class="pull-left"><em style="padding-top: 11px !important;" class="fa fa-money fa-lg pointer" aria-hidden="true"></em></span>
+                                <span data-id="c2" class="sizeLarge" style="font-weight: bold !important;"> Crypto Carbon(B)</span>
+                                <br>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <span style="font-size: small !important;font-weight: bold !important;" data-toggle="tooltip" data-placement="top" data-animation="false">266.7CCRB</span>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 row-eq-height">
+                        <div class="card" style="width:100% !important;line-height: 1.5 !important;padding-left: 0rem !important; padding-right: 0rem !important;">
+                          <div class="card-block" style="padding: 0.5rem !important;">
+                            
+                            <div class="text-center">
+                              <span class="pull-left"><em style="padding-top: 11px !important;" class="fa fa-rss fa-lg pointer" aria-hidden="true"></em></span>
+                              <span data-id="c3" class="sizeLarge" style="font-weight: bold !important;"> Crypto Carbon(C)</span>
+                              <br>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <span style="font-size: small !important;font-weight: bold !important;" data-toggle="tooltip" data-placement="top" data-animation="false">266.7CCRB</span>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 row-eq-height">
+                        <div class="card" style="width:100% !important;line-height: 1.5 !important;padding-left: 0rem !important; padding-right: 0rem !important;">
+                          <div class="card-block" style="padding: 0.5rem !important;">
+                            <div class="text-center">
+                              <span class="pull-left"><em style="padding-top: 11px !important;" class="fa fa-sitemap fa-lg pointer" aria-hidden="true"></em></span>
+                                <span data-id="c4" class="sizeLarge" style="font-weight: bold !important;"> Crypto Carbon(D)</span>
+                                <br>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <span style="font-size: small !important;font-weight: bold !important;" data-toggle="tooltip" data-placement="top" data-animation="false">266.7CCRB</span>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-1 row">
+                      <div class="pull-right" >
+                        <button class="btn btn-default pointer btn-sm pull-right" style="border-radius: 50%; min-width: 50px; height: 50px; margin-top: 7px;"> 
+                          <span><em class="fa fa-arrow-right fa-lg pointer" aria-hidden="true"></em></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+</div>
